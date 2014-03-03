@@ -428,38 +428,3 @@ h6{
 	margin: 0 auto;
 }
 
-
-
-
-/*RESPONSIVE STYLING*/
-
-/* smartphone (narrow screen) layout */
-@media screen and (max-width: 978px){
-
-
-}
-
-/* widescreen layout */
-@media screen and (min-width: 1280px){
-/* HOME PAGE STYLING */
-#main-container-home{
-	zoom: 1.1;
-}
-
-#main-container-services{
-	zoom: 1.1;
-}
-
-#main-container-process{
-	zoom: 1.1;
-}
-
-#main-container-about{
-	zoom: 1.1;
-}
-
-#main-container-contact{
-	zoom: 1.1;
-}
-
-}
