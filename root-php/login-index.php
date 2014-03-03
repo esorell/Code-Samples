@@ -10,12 +10,7 @@
 		$title = mysql_real_escape_string( strip_tags( $_POST[ 'title' ] ) );
 		$url = mysql_real_escape_string( strip_tags( $_POST[ 'url' ] ) );
 				
-		// elimiate any harmful form input
-		
-		// perform validation on all of the data
-		
 		// insert into the database, but only if the data checks out
-		
 		$query = "INSERT INTO 
 				 	bookmark(title,
 							url)
@@ -26,9 +21,7 @@
 			or die(mysql_error() );
 	}
 	
-	// get all the events from the database
-	// sort them from the event most in the future to
-	// the one closest to today
+	// get all the bookmarks from the database and sort in alphabetical order by title
 	$query = 'SELECT * FROM bookmark ORDER BY title ASC';
 	
 	$result = mysql_query( $query ) 
@@ -64,27 +57,27 @@
         
         <!-- FORM FOR INPUTTING NEW LIST ITEMS --> 
        
-       <?php echo $error; ?>
-		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        	<fieldset>
-        	<div id="login">
-				<ol>
-                	<li><legend class="top">SOMETHING YOU RELISH?</legend></li>
-                    <li>
-                        <label class="description">Title:</label>
-                        <textarea name="title" rows="1" cols="28" /></textarea>
-                    </li>
-                    <li>
-                        <label class="description">URL:</label>
-                        <textarea name="url" rows="1" cols="28" /></textarea>
-                    </li>
-                    <li>
-                        <input class="button" type="submit" value="Save" />
-                    </li>
-				</ol>
-            </div>
-            </fieldset>
-		</form>
+       	<?php echo $error; ?>
+			<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+		        <fieldset>
+		        	<div id="login">
+						<ol>
+		                	<li><legend class="top">SOMETHING YOU RELISH?</legend></li>
+		                    <li>
+		                        <label class="description">Title:</label>
+		                        <textarea name="title" rows="1" cols="28" /></textarea>
+		                    </li>
+		                    <li>
+		                        <label class="description">URL:</label>
+		                        <textarea name="url" rows="1" cols="28" /></textarea>
+		                    </li>
+		                    <li>
+		                        <input class="button" type="submit" value="Save" />
+		                    </li>
+						</ol>
+		            </div>
+		        </fieldset>
+			</form>
             
             <!-- LIST OF BOOKMARK LINKS -->
         	<div class="links">
