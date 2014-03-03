@@ -9,13 +9,8 @@
 		// assemble all the form data and eliminate any harmful form input
 		$title = mysql_real_escape_string( strip_tags( $_POST[ 'title' ] ) );
 		$url = mysql_real_escape_string( strip_tags( $_POST[ 'url' ] ) );
-				
-		// elimiate any harmful form input
-		
-		// perform validation on all of the data
 		
 		// insert into the database, but only if the data checks out
-		
 		$query = "INSERT INTO 
 				 	bookmark(title,
 							url)
@@ -26,9 +21,7 @@
 			or die(mysql_error() );
 	}
 	
-	// get all the events from the database
-	// sort them from the event most in the future to
-	// the one closest to today
+	// get all the bookmarks from the database and sort in alphabetical order by title
 	$query = 'SELECT * FROM bookmark ORDER BY title ASC';
 	
 	$result = mysql_query( $query ) 
@@ -60,6 +53,7 @@
         </header>
      	
         <div class="container">
+        
          <!-- LOGIN FORM --> 
             
        <?php echo $error; ?>
