@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One|Pompiere|Poiret+One|Sirin+Stencil|Istok+Web|Vast+Shadow|Glass+Antiqua|Limelight|EB+Garamond|Jacques+Francois+Shadow|Autour+One);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	background-image:url(../images/stripes.png);
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1{
+	font-family: 'Nixie One', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 28px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+
+legend{
+	
+}
+
+ol{
+	
+}
+
+/*title of the bookmark*/
+ol li.title{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+/* PAGE TO ADD BOOKMARKS ONCE LOGGED IN */
+#new-item{
+	font-family: 'Nixie One', cursive;
+	font-size: 24px;
+	margin-left: 200px;
+	
+}
+
+
+ol li.name{
+	
+}
+
+ol li.web{
+	
+}
+
+
+/* INDEX PAGE STYLING*/
+
+/*list of bookmark links*/
+.links{
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+
+	
+}
+
+/*login section styling*/
+#login{
+	
+	padding: 10px 30px 10px 30px;
+	margin: 20px 0 30px 0px;
+	background-color: rgba(255,255,255,0.7);
+	height: 20px;
+	line-height: 20px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 1px 1px 1px 1px #999999;
+	box-shadow: 1px 1px 1px 1px #999999;
+}
+
+#login ol{
+
+}
+
+#login ol li{
+	float: left;
+	display: inline-block;
+}
+
+
+/* form label styling for login and adding new list items*/
+label, input{
+	margin-right: 10px;
+}
+
+.description{
+	height: 15px;
+	line-height: 15px;
+}
+
+.top{
+	margin-right: 40px;
+	font-weight: 400;
+	text-shadow: 2px 2px 2px #858f8f;
+	filter: dropshadow(color=#858f8f, offx=2, offy=2);
+}
+
+.button{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+#new-item{
+	
+	padding: 10px 10px 10px 10px;
+	margin: 20px 0 30px 0px;
+	background-color: rgba(255,255,255,0.7);
+	height: 20px;
+	line-height: 20px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 1px 1px 1px 1px #999999;
+	box-shadow: 1px 1px 1px 1px #999999;
+}
+
+#new-item ol{
+
+}
+
+#new-item ol li{
+	float: left;
+	display: inline-block;
+}
+
+.top{
+	margin-right: 20px;
+	font-weight: 400;
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 2px #858f8f;
+	filter: dropshadow(color=#858f8f, offx=2, offy=2);
+}
+
+.button{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+/*logout button styling*/
+#logout{
+	padding: 10px 30px 10px 15px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.7);
+	height: 15px;
+	line-height: 15px;
+	width: 60px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 1px 1px 1px 1px #999999;
+	box-shadow: 1px 1px 1px 1px #999999;
+	text-decoration: none;
+}
+
+/*footer styling*/
+footer{
+	width: 100%;
+	text-align: center;
+	max-height: 40px;
+	line-height: 40px;
+	margin-top: 40px;
+	position: absolute;
+	margin-bottom: 0px;
+	
+}
